@@ -18,18 +18,6 @@ export class CompanyService {
 
   /**
    * Récupère toutes les companies
-   * @param page number
-   * @param column string
-   * @param direction string
-   * @return Observable<IPaginateResponse<ICompany[]>>
-   */
-  getCompanies(page: number = 1, column: string, direction: string): Observable<IPaginateResponse<ICompany[]>> {
-    const query = `?page=${page}&column=${column}&direction=${direction}`;
-    return this.http.get<IPaginateResponse<ICompany[]>>(api.back + '/company' + query, this.httpOptions);
-  }
-
-  /**
-   * Récupère toutes les companies
    * @param id number
    * @return Observable<IPaginateResponse<ICompany>>
    */

@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {CompanyService} from '../../services/company.service';
-import {FormBuilder, Validators} from '@angular/forms';
+import {FormBuilder} from '@angular/forms';
 import {of, Subscription} from 'rxjs';
 import {catchError, tap} from 'rxjs/operators';
 
