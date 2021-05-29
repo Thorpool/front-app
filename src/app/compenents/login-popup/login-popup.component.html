@@ -1,0 +1,22 @@
+<div class="col-12 mx-auto">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="text-center">
+    <div class="form-group">
+      <mat-form-field appearance="legacy">
+        <mat-label>Email</mat-label>
+        <input matInput type="text" formControlName="email">
+      </mat-form-field>
+    </div>
+
+    <div class="form-group">
+      <mat-form-field appearance="legacy">
+        <mat-label>Mot de passe</mat-label>
+        <input matInput type="password" formControlName="password">
+      </mat-form-field>
+    </div>
+    <mat-error *ngIf="error" class="mb-2">
+      {{error}}
+    </mat-error>
+    <button mat-flat-button color="primary" type="submit" [disabled]="!loginForm.valid">Se connecter</button>
+  </form>
+</div>
+

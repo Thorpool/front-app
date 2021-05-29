@@ -1,0 +1,3 @@
+class ISector {
+  sector: string;
+}

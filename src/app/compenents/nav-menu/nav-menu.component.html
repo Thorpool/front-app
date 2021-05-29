@@ -1,0 +1,11 @@
+<div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+  <div class="logo text-center"><a routerLink="" class="simple-text logo-normal">TKT</a></div>
+  <div class="sidebar-wrapper">
+    <mat-list role="list" class="nav" *ngIf="isSigned">
+      <mat-list-item role="listitem" class="nav-item" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <mat-icon>dashboard</mat-icon>
+        <p class="d-inline-block ml-2">Dashboard</p>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>

@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+@import "assets/css/material-dashboard.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.logo a {
+  text-decoration: none;
+}
+
+.sidebar {
+  mat-list-item {
+    cursor: pointer;
+  }
+  mat-list-item.active {
+    background-color: purple;
+    color: white;
+  }
+}
+
+pagination-controls{
+  a{
+    text-decoration: none;
+  }
+  .ngx-pagination .current{
+    background: purple;
+    color: white;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}

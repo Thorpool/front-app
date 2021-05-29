@@ -1,0 +1,3 @@
+class IToken {
+  accessToken: string;
+}
